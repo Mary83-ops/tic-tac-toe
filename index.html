@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                                                                                                          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <table>
-        <tr>
-            <td class="table_cell" id="0"></td>
-            <td class="table_cell" id="1"></td>
-            <td class="table_cell" id="2"></td>
-        </tr>
-
-        <tr>
-            <td class="table_cell" id="3"></td>
-            <td class="table_cell" id="4"></td>
-            <td class="table_cell" id="5"></td>
-        </tr>
-
-        <tr>
-            <td class="table_cell" id="6"></td>
-            <td class="table_cell" id="7"></td>
-            <td class="table_cell" id="8"></td>
-        </tr>
-    </table>
-
-    <div class="endgame">
-        <div class="content"></div>
-    </div>
-    <button onclick="startGame">Replay</button>
-
-    <script src="main.js"></script>
+    
+        <div class="container">
+            <h1>TIC TAC TOE</h1>
+        
+        <table>
+            <tr>
+                <td class="cell" id="b1" onclick="myfunc_1(); myfunc();" readonly></td>
+                <td class="cell" id="b2" onclick="myfunc_2(); myfunc();" readonly></td>
+                <td  class="cell" id="b3" onclick="myfunc_3(); myfunc();" readonly></td>
+            </tr>
+    
+            <tr>
+                <td class="cell" id="b4" onclick="myfunc_4(); myfunc();" readonly></td>
+                <td class="cell" id="b5" onclick="myfunc_5(); myfunc();" readonly></td>
+                <td class="cell" id="b6" onclick="myfunc_6(); myfunc();" readonly></td>
+            </tr>
+    
+            <tr>
+                <td class="cell" id="7" onclick="myfunc_7(); myfunc();" readonly></td>
+                <td class="cell" id="8" onclick="myfunc_8(); myfunc();" readonly></td>
+                <td class="cell" id="9" onclick="myfunc_9(); myfunc();" readonly></td>
+            </tr>
+        </table>
+    
+        <button id="Reset" onclick="myfunc_10()">Reset</button>
+        <p id="message"></p>
+        </div>
+    
+        <script src="main.js"></script>
 
 </body>
 </html>
